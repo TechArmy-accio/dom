@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(34, 32, 32);
+            color: white;
+        }
+        input, button{
+            display: block;
+            margin: 10px;
+        }
+        #error{
+            color: red;
+        }
+        #success{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+      <!-- hey dear ai create a form with name, email, password -->
+        <form>
+
+            <div id="name-div">
+                <input type="text" id="name" name="name"
+                placeholder="Enter your name"
+                >
+            </div>
+            
+            <div>
+                <input type="email" id="email" name="email"
+                placeholder="Enter your email" 
+                >
+            </div>
+            
+            <input type="password" id="password" name="password"
+            placeholder="Enter your password"
+            />
+
+            <input type="password" id="confirm_password" 
+            placeholder="Confirm your password">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="error"></div>
+        <div id="success"></div>
+
+        <script src="./script.js"></script>
+</body>
+</html>
